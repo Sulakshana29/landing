@@ -1,0 +1,33 @@
+/* NavBar.css */
+
+.navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.light {
+    background-color: #0585e0;
+  }
+  
+  .navbar.dark {
+    background-color: #202021;
+  }
+  
+  .navbar-title {
+    flex-grow: 2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .nav-button {
+    margin-left: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-button.active {
+    border-bottom: 2px solid #d70f0f;
+  }
+  

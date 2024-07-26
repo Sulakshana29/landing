@@ -1,0 +1,89 @@
+:root {
+    --light-bg-color: #f9f9f9;
+    --light-text-color: #333;
+    --light-card-bg-color: #fff;
+    --light-card-text-color: #000;
+
+    --dark-bg-color: #3b3b3b; 
+    --dark-text-color: #fff;
+    --dark-card-bg-color: #444;
+    --dark-card-text-color: #fff;
+}
+
+.about-container {
+    width: 100%; 
+    padding: 10em; 
+    box-sizing: border-box; 
+    background-color: inherit; 
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 2em; 
+    border-radius: 8px; 
+}
+
+.about-heading {
+    margin: 0; 
+    padding: 1em 0; 
+    text-align: center; 
+    font-weight: bold;
+    background: inherit; 
+}
+
+.about-subheading {
+    margin: 0; 
+    padding: 1em 0; 
+    text-align: center; 
+}
+
+.about-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+.about-image {
+    border-bottom: 4px solid #dd511a;
+}
+
+.about-card-heading {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+
+body.light-theme .about-container {
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
+}
+
+body.dark-theme .about-container {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
+
+body.light-theme .about-card {
+    background-color: var(--light-card-bg-color);
+    color: var(--light-card-text-color);
+}
+
+body.dark-theme .about-card {
+    background-color: var(--dark-card-bg-color);
+    color: var(--dark-card-text-color);
+}
+
+body.light-theme .about-card-heading {
+    color: var(--light-card-text-color);
+}
+
+body.dark-theme .about-card-heading {
+    color: var(--dark-card-text-color);
+}
